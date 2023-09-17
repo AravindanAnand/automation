@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\VSCode\\automation\\automation.csproj": {}
+    "d:\\VSCode\\automation\\automation.csproj": {}
   },
   "projects": {
-    "D:\\VSCode\\automation\\automation.csproj": {
+    "d:\\VSCode\\automation\\automation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VSCode\\automation\\automation.csproj",
+        "projectUniqueName": "d:\\VSCode\\automation\\automation.csproj",
         "projectName": "automation",
-        "projectPath": "D:\\VSCode\\automation\\automation.csproj",
+        "projectPath": "d:\\VSCode\\automation\\automation.csproj",
         "packagesPath": "C:\\Users\\aravi\\.nuget\\packages\\",
-        "outputPath": "D:\\VSCode\\automation\\obj\\",
+        "outputPath": "d:\\VSCode\\automation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aravi\\AppData\\Roaming\\NuGet\\NuGet.Config"

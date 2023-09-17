@@ -27,8 +27,6 @@ namespace automation.Drivers
 
             _extentReports = new ExtentReports();
             _extentReports.AttachReporter(htmlReporter);
-            _extentReports.AddSystemInfo("Application", "Youtube");
-            _extentReports.AddSystemInfo("Browser", "Chrome");
             _extentReports.AddSystemInfo("OS", "Windows");
         }
 
