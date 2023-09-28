@@ -15,10 +15,7 @@ namespace automation.Repository
     {
        public void Login(){
              try{
-                driver.Url=getProperty().Url;
-                driver.FindElement(LoginOR.txtBoxUsername).SendKeys(getProperty().Username);
-                driver.FindElement(LoginOR.txtBoxPassword).SendKeys(getProperty().Password);
-                driver.FindElement(LoginOR.buttonLogin).Click();
+                driver.Url=getProperty().Url;             
              }catch(Exception ex){
                 Assert.Fail("Failure:"+ex.Message);
              }

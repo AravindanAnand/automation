@@ -5,6 +5,8 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.DevTools.V114.Page;
 using OpenQA.Selenium.Edge;
+using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
 
 
 namespace automation.Drivers
@@ -55,5 +57,28 @@ namespace automation.Drivers
             foreach(var driverProcess in driverProcesses)
                     driverProcess.Kill();
         }
+
+        public static bool waitForElement(By element){
+            try{
+            WebDriverWait wait=new WebDriverWait(driver,TimeSpan.FromSeconds(20));
+            wait.Until(ExpectedConditions.ElementExists(element));
+            return true;
+            }catch(Exception ex){
+                return false;
+            }
+        }
+
+        public static bool waitForElementClickable(By element){
+            try{
+            WebDriverWait wait=new WebDriverWait(driver,TimeSpan.FromSeconds(10));
+            wait.Until(ExpectedConditions.ElementIsVisible(element));
+            wait.Until(ExpectedConditions.ElementToBeClickable(element));
+            return true;
+            }catch(Exception ex){
+                return false;
+            }
+        }
+
+     
     }
 }

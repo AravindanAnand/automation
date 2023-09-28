@@ -1,29 +1,12 @@
-@swaglabs
-Feature: Sanity
+@urvann
+Feature: Urvann Assignment
 
-Background: Login
-Given Login to the application
+@urvann
+Scenario Outline: Urvann
+    Given Urvann Assignment <pincode>
 
-@addbyprice
-Scenario: AddByPrice
-    Given Add item to cart by price "29.99"
-    Then Open cart to view the purchased items
-    Then Checkout the items
-    Then Add the billing user information "testnamefirst" and "testnamelast" and "213123123"
-    Then Finish the purchase
-    When Purchase is successfull
-    Then Come back to homepage
-
-
-@addbyname
-Scenario: Add to cart by name
-    Given Add item to cart by name "Sauce Labs Fleece Jacket"
-    Then Open cart to view the purchased items
-    Then Checkout the items
-    Then Add the billing user information "testnamefirst" and "testnamelast" and "213123123"
-    Then Finish the purchase
-    When Purchase is successfull
-    Then Come back to homepage
-
-
-
+Examples:
+|pincode|
+|643001|
+|110032|
+|514251422|

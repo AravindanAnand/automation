@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\VSCode\\automation\\automation.csproj": {}
+    "D:\\VSCode\\automation\\automation.csproj": {}
   },
   "projects": {
-    "d:\\VSCode\\automation\\automation.csproj": {
+    "D:\\VSCode\\automation\\automation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\VSCode\\automation\\automation.csproj",
+        "projectUniqueName": "D:\\VSCode\\automation\\automation.csproj",
         "projectName": "automation",
-        "projectPath": "d:\\VSCode\\automation\\automation.csproj",
+        "projectPath": "D:\\VSCode\\automation\\automation.csproj",
         "packagesPath": "C:\\Users\\aravi\\.nuget\\packages\\",
-        "outputPath": "d:\\VSCode\\automation\\obj\\",
+        "outputPath": "D:\\VSCode\\automation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aravi\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -54,9 +54,17 @@
               "target": "Package",
               "version": "[3.17.0, )"
             },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[4.12.4, )"
+            },
             "Selenium.WebDriver": {
               "target": "Package",
               "version": "[4.12.4, )"
+            },
+            "SeleniumExtras.WaitHelpers": {
+              "target": "Package",
+              "version": "[1.0.2, )"
             },
             "SpecFlow.NUnit": {
               "target": "Package",

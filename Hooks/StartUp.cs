@@ -11,6 +11,7 @@ using System.IO;
 using System.Text.Json;
 using OpenQA.Selenium.DevTools.V114.Emulation;
 using automation.Repository;
+using OpenQA.Selenium.Support.UI;
 
 namespace automation.Hooks
 {
@@ -78,13 +79,14 @@ namespace automation.Hooks
             string stepName = scenarioContext.StepContext.StepInfo.Text;
 
             var driver = _container.Resolve<IWebDriver>();
+            
 
             //When scenario passed
             if (scenarioContext.TestError == null)
             {
                 if (stepType == "Given")
                 {
-                    _scenario.CreateNode<Given>(stepName);
+                    _scenario.CreateNode<Given>(stepName).Pass(BaseClass.getDesc());
                 }
                 else if (stepType == "When")
                 {

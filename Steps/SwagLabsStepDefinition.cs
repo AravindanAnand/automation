@@ -12,6 +12,7 @@ namespace automation.Steps
         private readonly ScenarioContext _scenarioContext;
        private readonly FeatureContext _featurecontext;
        HomePage homepage=new HomePage();
+       LoginPage login=new LoginPage();
 
        public SwagLabsStepDefinition(ScenarioContext scenarioContext,FeatureContext featurecontext)
        {
@@ -22,7 +23,6 @@ namespace automation.Steps
        [Given("Login to the application")]
        public void Logintotheapplication()
        {            
-           LoginPage login=new LoginPage();
            login.Login();
        }
 
@@ -75,6 +75,17 @@ namespace automation.Steps
         homepage.goBackHome();
         
        }
+
+       
+        
+      [Given("Urvann Assignment (.*)")]
+       public void UrvannAssignment(string pincode)
+       {    
+        login.Login();        
+        homepage.enterPincode(pincode);
+        homepage.getLevel1Headers();
+       }
+
        
     }
 }
